@@ -1,8 +1,8 @@
-export default [
+[
   {
     id: 1,
     title: 'Samsung Galaxy S7',
-    price: 399.99,
+    price: 599.99,
     img: 'https://ufpyfzqptcdbelaugszo.supabase.co/storage/v1/object/public/demo-69/cart-69/galaxy-S7.png',
     amount: 1,
   },
@@ -23,7 +23,7 @@ export default [
   {
     id: 4,
     title: 'Samsung Galaxy S8',
-    price: 599.99,
+    price: 399.99,
     img: 'https://ufpyfzqptcdbelaugszo.supabase.co/storage/v1/object/public/demo-69/cart-69/galaxy-S8.png',
     amount: 1,
   },
