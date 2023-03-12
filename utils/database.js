@@ -2,7 +2,7 @@ const { Pool } = require('pg');
 
 let pool;
 
-if (process.env.NODE_ENV === 'SUPABASE') {
+if (process.env.DATABASE === 'SUPABASE') {
   pool = new Pool({
     user: 'postgres',
     host: process.env.SUPABASE_HOST,
@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'SUPABASE') {
     password: process.env.SUPABASE_PASSWORD,
   });
   console.log(
-    `Connecting  local SUPABASEF PostgreSQL database ${pool.options.database} on port ${pool.options.port}`
+    `Connecting SUPABASE PostgreSQL database ${pool.options.database} on port ${pool.options.port}`
   );
 } else {
   pool = new Pool({
